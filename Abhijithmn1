@@ -1,0 +1,58 @@
+MySQL Assignment 2 – Querying Data
+
+This repository contains the SQL solutions for MySQL Assignment 2, focusing on Data Query Language (DQL) commands, filtering, sorting, grouping, aggregate functions, and SQL joins using the employee database.
+
+📋 Prerequisites
+
+Before running the queries in this assignment, ensure you have:
+
+Created the employee database and its tables (departments, location, and employees) with all required constraints from Assignment 1.
+
+Populated the tables using the provided DML INSERT statements.
+___________________________________________________________________________________________________
+
+1. Clauses & Operators
+DISTINCT: Removes duplicate values. It shows only the unique salary amounts from the employees table.
+
+AS (Aliases): Gives temporary, nicknames to columns in your results 
+
+WHERE & AND: Acts as a filter. It lets you pull only the rows that match specific rules
+
+IS NULL: Finds blank or missing data
+
+UPDATE: Edits existing data in the table.
+
+2. Sorting & Grouping Data
+ORDER BY: Sorts your results in a specific order—either lowest to highest
+
+LIMIT: Caps the number of rows shown. It displays only the first 5 employees hired in 2018 and hides the rest.
+
+Aggregate Functions (SUM, MIN, MAX, AVG, COUNT): Performs math on a group of rows to give a single summary number:
+
+SUM: Adds up the total salary paid in the Finance department.
+
+MIN: Finds the youngest employee's age.
+
+MAX: Finds the highest salary in each office location.
+
+AVG: Calculates the average pay for 'Analyst' roles.
+
+COUNT: Counts the total number of rows or employees.
+
+GROUP BY: Bundles rows with the same values together 
+
+HAVING: Filters those grouped bundles after the math is done—for example,
+
+3. SQL Joins
+INNER JOIN: Connects two tables and shows only the matching records. It lists employees alongside their department names, skipping anyone without a department.
+
+LEFT JOIN: Shows everything from the first (left) table and only matching data from the second. It lists every single department and its headcount—even departments that currently have 0 employees.
+
+RIGHT JOIN: Shows everything from the second (right) table and only matching data from the first. It lists every office location and the staff working there, showing NULL (blank) for empty offices.
+
+
+Open your MySQL Workbench
+
+Select the employee database (USE employee;).
+
+Execute the queries from the Assignment 2 SQL script sequentially.
